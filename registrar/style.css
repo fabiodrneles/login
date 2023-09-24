@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    /*background: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: url('../images/img.svg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+
+    backdrop-filter: blur(20px);
+  }
+  
+  .header {
+    background: transparent;
+    padding: 20px;
+  }
+
+  .header h2 {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .form {
+    padding: 20px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .form-control input {
+    border: 2px solid rgba(255, 255, 255, .2);
+    background: transparent;
+    display: block;
+    border-radius: 40px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-control input::placeholder {
+    color: #fff;
+  }
+  
+  .form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+  }
+  
+  .form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form button {
+    /*
+    background-color: #fc00ff;
+    border: 2px solid #fc00ff;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    */
+
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Error and Success */
+  .form-control.success input {
+    border-color: #07f469;
+  }
+  
+  .form-control.error input {
+    border-color: #ff1900;
+  }
+  
+  .form-control.success i.fa-check-circle {
+    color: #07f469;
+    visibility: visible;
+  }
+  
+  .form-control.error i.fa-exclamation-circle {
+    color: #ff1900;
+    visibility: visible;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+    color: #ff1900;
+  }
+  
